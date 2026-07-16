@@ -1,0 +1,639 @@
+Plan de estudio
+Propuesta: (032) Ingeniería en Computación Plan: (2024) 2024 Versión: 2
+Módulo: Ciclo Troncal Computación 2024
+ -- Actividad Tipo Año Período Nota Origen Créditos Puntaje Correlativas
+
+ - Matemática para Ingeniería (D1001)|Materia 1|ambos cuatrimestres|7 (Aprobado)|Equivalencia
+
+ - Introducción a la Informática (I1001)|Materia 1|ambos cuatrimestres|9 (Aprobado)|Equivalencia
+
+ - Matemática A (F1301)|Materia 1|ambos cuatrimestres|6 (Aprobado)|Equivalencia
+/Para cursar
+ ! Opción 1
+Matemática para Ingeniería (D1001)|Aprobada
+//Para aprobar
+ ! Opción 1
+Matemática para Ingeniería (D1001)|Aprobada
+
+ - Programación I (I1101)|Materia 1|ambos cuatrimestres|8 (Aprobado)|Equivalencia
+/Para cursar
+ ! Opción 1
+Introducción a la Informática (I1001)|Regularizada
+//Para aprobar
+ ! Opción 1
+Introducción a la Informática (I1001)|Aprobada
+
+ - Fundamentos de Arquitectura de Computadoras (I1166)|Materia 1|1° cuatrimestre||Equivalencia
+/Para cursar
+ ! Opción 1
+Introducción a la Informática (I1001)|Regularizada
+//Para aprobar
+ ! Opción 1
+Introducción a la Informática (I1001)|Aprobada
+
+ - Matemática B (F1302)|Materia 1|ambos cuatrimestres|8 (Aprobado)|Equivalencia
+/Para cursar
+ ! Opción 1
+Matemática para Ingeniería (D1001)|Aprobada
+Matemática A (F1301)|Regularizada
+//Para aprobar
+ ! Opción 1
+Matemática A (F1301)|Aprobada
+
+ - Programación II (I1102)|Materia 1|2° cuatrimestre|8 (Aprobado)|Examen
+/Para cursar
+ ! Opción 1
+Introducción a la Informática (I1001)|Aprobada
+Programación I (I1101)|Regularizada
+//Para aprobar
+ ! Opción 1
+Programación I (I1101)|Aprobada
+
+ - Física I (F1303)|Materia 1|ambos cuatrimestres|6 (Aprobado)|Examen
+/Para cursar
+ ! Opción 1
+Matemática para Ingeniería (D1001)|Aprobada
+Matemática A (F1301)|Regularizada
+//Para aprobar
+ ! Opción 1
+Matemática A (F1301)|Aprobada
+
+ - Matemática C (F1304)|Materia 2|ambos cuatrimestres||Equivalencia
+/Para cursar
+ ! Opción 1
+Matemática A (F1301)|Aprobada
+Matemática B (F1302)|Regularizada
+//Para aprobar
+ ! Opción 1
+Matemática B (F1302)|Aprobada
+
+ - Programación III (I1103)|Materia 2|1° cuatrimestre|En Curso
+/Para cursar
+ ! Opción 1
+Programación I (I1101)|Aprobada
+Programación II (I1102)|Regularizada
+//Para aprobar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+
+ - Arquitectura de Computadoras (I1105)|Materia 2|1° cuatrimestre|Regularidad
+/Para cursar
+ ! Opción 1
+Introducción a la Informática (I1001)|Aprobada
+Fundamentos de Arquitectura de Computadoras (I1166)|Regularizada
+//Para aprobar
+ ! Opción 1
+Fundamentos de Arquitectura de Computadoras (I1166)|Aprobada
+
+ - Taller de Lenguajes I (I1104)|Materia 2|1° cuatrimestre|6 (Aprobado)|Examen
+/Para cursar
+ ! Opción 1
+Programación I (I1101)|Aprobada
+Programación II (I1102)|Regularizada
+//Para aprobar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+
+ - Matemática D (F1306)|Materia 2|ambos cuatrimestres|Regularidad
+/Para cursar
+ ! Opción 1
+Matemática B (F1302)|Aprobada
+Matemática C (F1304)|Regularizada
+//Para aprobar
+ ! Opción 1
+Matemática C (F1304)|Aprobada
+
+ - Física II (F1305)|Materia 2|ambos cuatrimestres|Regularidad
+/Para cursar
+ ! Opción 1
+Matemática A (F1301)|Aprobada
+Matemática B (F1302)|Regularizada
+Física I (F1303)|Regularizada
+//Para aprobar
+ ! Opción 1
+Matemática B (F1302)|Aprobada
+Física I (F1303)|Aprobada
+
+ - Conceptos de Sistemas Operativos (I1106)|Materia 2|2° cuatrimestre|En Curso
+/Para cursar
+ ! Opción 1
+Programación I (I1101)|Aprobada
+Programación II (I1102)|Regularizada
+Fundamentos de Arquitectura de Computadoras (I1166)|Aprobada
+Arquitectura de Computadoras (I1105)|Regularizada
+//Para aprobar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Arquitectura de Computadoras (I1105)|Aprobada
+
+ - Taller de Lenguajes II (I1107)|Materia 2|2° cuatrimestre|
+ 8 (Promocionado) Promoción
+/Para cursar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Taller de Lenguajes I (I1104)|Regularizada
+//Para aprobar
+ ! Opción 1
+Taller de Lenguajes I (I1104)|Aprobada
+
+ - Probabilidades y Estadística (F1315)|Materia 3|ambos cuatrimestres|Regularidad
+/Para cursar
+ ! Opción 1
+Matemática A (F1301)|Aprobada
+Matemática B (F1302)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Matemática B (F1302)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Electrotecnia y Electrónica (E1282)|Materia 3|1° cuatrimestre|En Curso
+/Para cursar
+ ! Opción 1
+Matemática B (F1302)|Aprobada
+Matemática C (F1304)|Regularizada
+Física I (F1303)|Aprobada
+Física II (F1305)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Matemática C (F1304)|Aprobada
+Física II (F1305)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Conceptos de Bases de Datos (I1108)|Materia 3|1° cuatrimestre|En Curso
+/Para cursar
+ ! Opción 1
+Programación I (I1101)|Aprobada
+Programación II (I1102)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Introducción al Diseño Lógico (E1301)|Materia 3|1° cuatrimestre|En Curso
+/Para cursar
+ ! Opción 1
+Fundamentos de Arquitectura de Computadoras (I1166)|Aprobada
+Arquitectura de Computadoras (I1105)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Arquitectura de Computadoras (I1105)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Introducción al Procesamiento de Señales (E1302)|Materia 3|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Matemática C (F1304)|Aprobada
+Matemática D (F1306)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Matemática D (F1306)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Taller de Arquitectura (I1109)|Materia 3|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Arquitectura de Computadoras (I1105)|Aprobada
+Introducción al Diseño Lógico (E1301)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Introducción al Diseño Lógico (E1301)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Ingeniería de Software (I1110)|Materia 3|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Programación I (I1101)|Aprobada
+Programación II (I1102)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Redes de Datos I (E1303)|Materia 3|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Arquitectura de Computadoras (I1105)|Aprobada
+Conceptos de Sistemas Operativos (I1106)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Conceptos de Sistemas Operativos (I1106)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Concurrencia y Paralelismo (I1111)|Materia 4|1° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Taller de Lenguajes I (I1104)|Aprobada
+Taller de Lenguajes II (I1107)|Regularizada
+Programación II (I1102)|Aprobada
+Arquitectura de Computadoras (I1105)|Aprobada
+Conceptos de Sistemas Operativos (I1106)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Taller de Lenguajes II (I1107)|Aprobada
+Conceptos de Sistemas Operativos (I1106)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Instrumentación y Control (E1304)|Materia 4|1° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Matemática C (F1304)|Aprobada
+Física II (F1305)|Aprobada
+Electrotecnia y Electrónica (E1282)|Regularizada
+Matemática D (F1306)|Aprobada
+Introducción al Procesamiento de Señales (E1302)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Electrotecnia y Electrónica (E1282)|Aprobada
+Introducción al Procesamiento de Señales (E1302)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Circuitos Digitales y Microcontroladores (E1305)|Materia 4|1° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Introducción al Diseño Lógico (E1301)|Aprobada
+Taller de Arquitectura (I1109)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Taller de Arquitectura (I1109)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Economía y Emprendedorismo (I1113)|Materia 4|1° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Matemática B (F1302)|Aprobada
+Matemática C (F1304)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Matemática C (F1304)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Redes de Datos II (I1114)|Materia 4|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Conceptos de Sistemas Operativos (I1106)|Aprobada
+Redes de Datos I (E1303)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Redes de Datos I (E1303)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Sistemas de Tiempo Real (I1115)|Materia 4|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Ingeniería de Software (I1110)|Regularizada
+Taller de Lenguajes II (I1107)|Aprobada
+Conceptos de Sistemas Operativos (I1106)|Aprobada
+Concurrencia y Paralelismo (I1111)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Ingeniería de Software (I1110)|Aprobada
+Concurrencia y Paralelismo (I1111)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Taller de Proyecto I (E1306)|Materia 4|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Ingeniería de Software (I1110)|Regularizada
+Taller de Arquitectura (I1109)|Aprobada
+Circuitos Digitales y Microcontroladores (E1305)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Ingeniería de Software (I1110)|Aprobada
+Circuitos Digitales y Microcontroladores (E1305)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Bases de Datos (I1112)|Materia 4|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Conceptos de Bases de Datos (I1108)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Conceptos de Bases de Datos (I1108)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Sistemas Distribuidos y Paralelos (I1116)|Materia 5|1° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Taller de Lenguajes II (I1107)|Aprobada
+Conceptos de Sistemas Operativos (I1106)|Aprobada
+Concurrencia y Paralelismo (I1111)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Concurrencia y Paralelismo (I1111)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Aspectos Legales de Ingeniería Informática (I1117)|Materia 5|1° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Matemática C (F1304)|Aprobada
+Economía y Emprendedorismo (I1113)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Economía y Emprendedorismo (I1113)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Introducción a la Arquitectura de Computadoras Cuánticas (E1307)|Materia 5|1° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Ingeniería de Software (I1110)|Aprobada
+Circuitos Digitales y Microcontroladores (E1305)|Aprobada
+Taller de Proyecto I (E1306)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Taller de Proyecto I (E1306)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Taller de Proyecto II (I1118)|Materia 5|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Ingeniería de Software (I1110)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Ingeniería de Software (I1110)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Introducción a la Programación Cuántica (I1167)|Materia 5|2° cuatrimestre|
+/Para cursar
+ ! Opción 1
+Fundamentos de Arquitectura de Computadoras (I1166)|Aprobada
+Arquitectura de Computadoras (I1105)|Regularizada
+Programación II (I1102)|Aprobada
+Ingeniería de Software (I1110)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Arquitectura de Computadoras (I1105)|Aprobada
+Ingeniería de Software (I1110)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Práctica Profesional Supervisada (EI100)|Materia 5|ambos cuatrimestres|
+/Para cursar
+ ! Opción 1
+Tener 20 actividades|aprobadas
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Tener 20 actividades|aprobadas
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Materia 5|ambos cuatrimestres|7 (Aprobado)|Examen
+Módulo: Ciclo Optativas Computación 2024|Materia Genérica: Optativas Tipo A - Computación (032 OPT A)
+Cumplimiento: Tener 1 actividades|aprobadas
+Actividad Tipo Año Período Nota Origen Créditos Puntaje Correlativas
+
+ - Aprendizaje Automático Profundo (Deep Learning) (I1158)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Programación III (I1103)|Regularizada
+Matemática B (F1302)|Aprobada
+Probabilidades y Estadística (F1315)|Regularizada
+//Para aprobar
+ ! Opción 1
+Probabilidades y Estadística (F1315)|Aprobada
+Programación III (I1103)|Aprobada
+
+ - Desarrollo Seguro de Aplicaciones (I1143)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Ingeniería de Software (I1110)|Regularizada
+ ! Opción 2
+Redes de Datos II (I1114)|Regularizada
+//Para aprobar
+ ! Opción 1
+Redes de Datos II (I1114)|Aprobada
+ ! Opción 2
+Ingeniería de Software (I1110)|Aprobada
+
+ - Diseño de Experiencia de Usuario (I1149)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Ingeniería de Software (I1110)|Regularizada
+//Para aprobar
+ ! Opción 1
+Ingeniería de Software (I1110)|Aprobada
+
+ - Internet de las Cosas (I1161)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Taller de Lenguajes II (I1107)|Regularizada
+ ! Opción 2
+Redes de Datos II (I1114)|Regularizada
+//Para aprobar
+ ! Opción 1
+Redes de Datos II (I1114)|Aprobada
+ ! Opción 2
+Taller de Lenguajes II (I1107)|Aprobada
+
+ - Java y Aplicaciones Avanzadas sobre Internet (I1128)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Taller de Lenguajes II (I1107)|Regularizada
+ ! Opción 2
+Ingeniería de Software (I1110)|Regularizada
+//Para aprobar
+ ! Opción 1
+Ingeniería de Software (I1110)|Aprobada
+ ! Opción 2
+Taller de Lenguajes II (I1107)|Aprobada
+
+ - Minería de Datos Usando Sistemas Inteligentes (I1133)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Programación III (I1103)|Regularizada
+ ! Opción 2
+Probabilidades y Estadística (F1315)|Regularizada
+//Para aprobar
+ ! Opción 1
+Probabilidades y Estadística (F1315)|Aprobada
+ ! Opción 2
+Programación III (I1103)|Aprobada
+
+ - Procesamiento de Imágenes Digitales (I1163)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Introducción al Procesamiento de Señales (E1302)|Regularizada
+//Para aprobar
+ ! Opción 1
+Introducción al Procesamiento de Señales (E1302)|Aprobada
+
+ - Taller de Lenguaje .NET (I1145)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Taller de Lenguajes II (I1107)|Regularizada
+ ! Opción 2
+Programación III (I1103)|Regularizada
+//Para aprobar
+ ! Opción 1
+Programación III (I1103)|Aprobada
+ ! Opción 2
+Taller de Lenguajes II (I1107)|Aprobada
+
+ - Taller de Lenguaje PHP (I1144)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Taller de Lenguajes II (I1107)|Regularizada
+ ! Opción 2
+Programación III (I1103)|Regularizada
+//Para aprobar
+ ! Opción 1
+Programación III (I1103)|Aprobada
+ ! Opción 2
+Taller de Lenguajes II (I1107)|Aprobada
+
+ - CALIDAD EN SISTEMAS DE SOFTWARE (I1121)|Materia 0.00|
+/Para cursar
+ ! Opción 1
+Programación II (I1102)|Aprobada
+Ingeniería de Software (I1110)|Regularizada
+Economía y Emprendedorismo (I1113)|Regularizada
+Matemática C (F1304)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Ingeniería de Software (I1110)|Aprobada
+Economía y Emprendedorismo (I1113)|Aprobada|Materia Genérica: Optativas Tipo B - Computación (032 OPT B)
+Cumplimiento: Tener 1 actividades|aprobadas
+Actividad Tipo Año Período Nota Origen Créditos Puntaje Correlativas
+
+ - Dispositivos Electrónicos (E1318)|Materia 5|Ambos Cuatrimestres| 0.00|
+/Para cursar
+ ! Opción 1
+Electrotecnia y Electrónica (E1282)|Regularizada
+Matemática C (F1304)|Aprobada
+Física II (F1305)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Electrotecnia y Electrónica (E1282)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Electrónica II (E1310)|Materia 5|Ambos Cuatrimestres| 0.00|
+/Para cursar
+ ! Opción 1
+Electrotecnia y Electrónica (E1282)|Regularizada
+Matemática C (F1304)|Aprobada
+Física II (F1305)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Electrotecnia y Electrónica (E1282)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Teoría de la Información y Codificación (E1603)|Materia 5|Ambos Cuatrimestres| 0.00|
+/Para cursar
+ ! Opción 1
+Introducción al Procesamiento de Señales (E1302)|Regularizada
+Redes de Datos I (E1303)|Regularizada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+Matemática D (F1306)|Aprobada
+Conceptos de Sistemas Operativos (I1106)|Aprobada
+//Para aprobar
+ ! Opción 1
+Introducción al Procesamiento de Señales (E1302)|Aprobada
+Redes de Datos I (E1303)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Arquitectura Avanzada de Procesadores (E1309)|Materia 5|Ambos Cuatrimestres| 0.00|
+/Para cursar
+ ! Opción 1
+Introducción al Diseño Lógico (E1301)|Regularizada
+Arquitectura de Computadoras (I1105)|Aprobada
+Circuitos Digitales y Microcontroladores (E1305)|Regularizada
+Taller de Arquitectura (I1109)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Introducción al Diseño Lógico (E1301)|Aprobada
+Circuitos Digitales y Microcontroladores (E1305)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Comunicaciones (E1311)|Materia 5|Ambos Cuatrimestres| 0.00|
+/Para cursar
+ ! Opción 1
+Introducción al Procesamiento de Señales (E1302)|Regularizada
+Matemática D (F1306)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Introducción al Procesamiento de Señales (E1302)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Introducción a la Robótica (E1505)|Materia 5|Ambos Cuatrimestres| 0.00|
+/Para cursar
+ ! Opción 1
+Instrumentación y Control (E1304)|Regularizada
+Electrotecnia y Electrónica (E1282)|Aprobada
+Introducción al Procesamiento de Señales (E1302)|Aprobada
+Programación III (I1103)|Regularizada
+Programación II (I1102)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Instrumentación y Control (E1304)|Aprobada
+Programación III (I1103)|Aprobada
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+Módulo: Ciclo Humanísticas Computación 2024|Materia Genérica: Electiva Aspectos Humanísticos de la Profesión (032 HUM)
+Cumplimiento: Tener 1 actividades|aprobadas
+Actividad Tipo Año Período Nota Origen Créditos Puntaje Correlativas
+
+ - Humanística A: Metodología de las Ciencias (S1001)|Materia 5|2° cuatrimestre| 0.00|
+/Para cursar
+ ! Opción 1
+Tener 15 actividades|aprobadas
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Tener 15 actividades|aprobadas
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+ - Humanística B: Seminario de Redacción de Textos Profesionales (S1002)|Materia 5|2° cuatrimestre| 0.00|
+/Para cursar
+ ! Opción 1
+Tener 15 actividades|aprobadas
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+//Para aprobar
+ ! Opción 1
+Tener 15 actividades|aprobadas
+Prueba de Suficiencia de Inglés (INFIN)|Aprobada
+
+Módulo: Ciclo Actividades de Formación Complementaria Computación 2024|Materia Genérica: Actividades de Formación Complementaria I - Computación (032 AFC 1)
+Cumplimiento: Obtener 10 puntos de actividades|aprobadas
+Actividad Tipo Año Período Nota Origen Créditos Puntaje Correlativas
+
+ - AFC1 - Actividad Libre 10p (1B010)|Materia 10.00||Materia Genérica: Actividades de Formación Complementaria II - Computación (032 AFC 2)
+Cumplimiento: Obtener 10 puntos de actividades|aprobadas
+
+ - AFC2 - Actividad Libre 10p (2B010)|Materia 4|2° cuatrimestre|10.00||Materia Genérica: Actividades de Formación Complementaria III - Computación (032 AFC 3)
+Cumplimiento: Obtener 10 puntos de actividades aprobadas
+
+ - AFC3 - Actividad Libre 10p (3B010)|Materia 10.00||Materia Genérica: Actividades de Formación Complementaria IV - Computación (032 AFC 4)
+Cumplimiento: Obtener 10 puntos de actividades aprobadas
+
+ - AFC4 - Actividad Libre 10p (4B010)|Materia 10.00|
+
+ - Prueba de Suficiencia de Inglés (INFIN)|Aprobada

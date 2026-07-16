@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Visualizador de Grafo de Materias</title>
+  <link href="https://unpkg.com/vis-network/styles/vis-network.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    html, body { height:100%; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; display:grid; grid-template-rows:auto 1fr auto; min-height:100vh; }
+    header { padding:12px 16px; background:#0b5cff; color:#fff; display:flex; align-items:center; gap:12px; }
+    header h1 { font-size:18px; margin:0; }
+    #container { display:grid; grid-template-columns:1fr 360px; gap:12px; padding:12px; box-sizing:border-box; min-height:0; }
+    #network { border:1px solid #ddd; border-radius:8px; background:#fff; height:100%; min-height:0; }
+    #panel { border:1px solid #ddd; border-radius:8px; padding:12px; overflow:auto; background:#fafafa; min-height:0; }
+    #container > div, #container > aside { min-height:0; }
+    .node-title { font-weight:700; margin-bottom:6px; }
+    .meta { font-size:13px; color:#333; margin-bottom:8px; }
+    .section { margin-bottom:10px; }
+    .req-list { font-family:monospace; white-space:pre-wrap; background:#fff; padding:8px; border-radius:6px; border:1px solid #eee; }
+    .controls { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; align-items:center; }
+    .btn { padding:4px 8px; border-radius:6px; border:1px solid #ccc; background:#fff; cursor:pointer; font-size:12px; line-height:1.3; }
+    .btn.primary { background:#0b5cff; color:#fff; border-color:#0b5cff; }
+    footer { padding:8px 12px; font-size:13px; color:#666; background:#f6f7fb; }
+    .error { color:#b00020; background:#fff0f0; padding:8px; border-radius:6px; border:1px solid #f2c2c2; margin-bottom:8px; }
+    input[type=file] { display:none; }
+    label.filebtn { padding:6px 10px; border-radius:6px; border:1px dashed #bbb; cursor:pointer; background:#fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Visualizador de Grafo de Materias</h1>
+    <div style="font-size:13px;color:#e6f0ff">Cargar grafo_dirigido.json y materias-detalle.json</div>
+  </header>
+
+  <div id="container">
+    <div id="network" style="width:100%; height:100%;"></div>
+
+    <aside id="panel">
+      <div class="controls">
+        <button id="fitBtn" class="btn">Ajustar vista</button>
+        <button id="toggleReq" class="btn">Mostrar/Ocultar correlativas</button>
+        <button id="exportPngBtn" class="btn">Exportar PNG</button>
+        <button id="exportJpgBtn" class="btn">Exportar JPG</button>
+        <button id="saveStateBtn" class="btn primary">Guardar estado</button>
+        <button id="restoreStateBtn" class="btn">Restaurar estado</button>
+        <button id="loadGrafoBtn" class="btn">Cargar grafo</button>
+        <button id="loadDetalleBtn" class="btn">Cargar detalle</button>
+      </div>
+
+      <input id="grafoInput" type="file" accept=".json" style="display:none" />
+      <input id="detalleInput" type="file" accept=".json" style="display:none" />
+      <div id="loadStatus" class="meta">Cargá primero los JSON de grafo y detalle si no estás usando HTTP.</div>
+
+      <div id="errorBox" style="display:none;" class="error"></div>
+
+      <div id="info">
+        <div class="section">
+          <div class="node-title">Selecciona un nodo</div>
+          <div class="meta">Haz clic en un nodo del grafo para ver sus datos y correlativas.</div>
+        </div>
+
+        <div id="details" style="display:none;">
+          <div class="section">
+            <div class="node-title" id="n-code"></div>
+            <div class="meta" id="n-name"></div>
+            <div class="meta"><strong>Tipo:</strong> <span id="n-type"></span> &nbsp; <strong>Año:</strong> <span id="n-year"></span></div>
+            <div class="meta"><strong>Estado actual:</strong> <span id="n-state"></span></div>
+          <div class="meta"><strong>Marcador usuario:</strong> <span id="n-user-status">(sin marcador)</span></div>
+          </div>
+
+          <div class="section">
+            <div><strong>Marcador personal</strong></div>
+            <label><input type="radio" name="userStatus" value=""> Ninguno</label><br>
+            <label><input type="radio" name="userStatus" value="aprobada"> Aprobada</label><br>
+            <label><input type="radio" name="userStatus" value="final"> Final</label><br>
+            <label><input type="radio" name="userStatus" value="promocion"> Promoción</label>
+            <div id="userStatusHint" class="meta">Seleccioná un estado para esta materia.</div>
+          </div>
+
+          <div class="section">
+            <div><strong>Requisitos para cursar</strong></div>
+            <div id="req-cursar" class="req-list"></div>
+          </div>
+
+          <div class="section">
+            <div><strong>Requisitos para aprobar</strong></div>
+            <div id="req-aprobar" class="req-list"></div>
+          </div>
+
+          <div class="section">
+            <div><strong>Desbloquea</strong></div>
+            <div id="unlocks" class="req-list"></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <span style="font-size:13px">Si la página no carga los JSON por defecto, usá el botón Cargar archivos o serví la carpeta por HTTP (recomendado).</span>
+  </footer>
+
+  <script>
+    const DEFAULT_GRAFO = 'grafo_dirigido.json';
+    const DEFAULT_DETALLE = 'materias-detalle.json';
+
+    let rawGrafo = null;
+    let rawDetalle = null;
+    let network = null;
+    let visNodes = null;
+    let visEdges = null;
+    let showReq = true;
+    const userStatusMap = new Map();
+    let selectedNodeCode = null;
+
+    async function tryFetchDefaults() {
+      if (!window.location.protocol.startsWith('http')) {
+        updateLoadStatus();
+        return;
+      }
+
+      try {
+        const [gResp, dResp] = await Promise.all([
+          fetch(DEFAULT_GRAFO),
+          fetch(DEFAULT_DETALLE)
+        ]);
+        if (!gResp.ok || !dResp.ok) throw new Error('Archivos no disponibles por HTTP');
+        rawGrafo = await gResp.json();
+        rawDetalle = await dResp.json();
+        updateLoadStatus();
+        buildNetworkFromData();
+      } catch (err) {
+        updateLoadStatus();
+        showError('No se pudieron cargar los archivos por defecto: ' + err.message + '. Usá los botones "Cargar grafo" y "Cargar detalle".');
+      }
+    }
+
+    function showError(msg) {
+      const box = document.getElementById('errorBox');
+      box.style.display = 'block';
+      box.textContent = msg;
+    }
+
+    function clearError() {
+      const box = document.getElementById('errorBox');
+      box.style.display = 'none';
+      box.textContent = '';
+    }
+
+    function getPeriodKey(period) {
+      const normalized = (period || '').toString().trim().toLowerCase();
+      if (normalized.includes('1')) return '1° cuatrimestre';
+      if (normalized.includes('2')) return '2° cuatrimestre';
+      if (normalized.includes('ambos')) return 'ambos cuatrimestres';
+      return 'sin periodo';
+    }
+
+    function getYearKey(year) {
+      if (year === null || year === undefined || year === '') return 'otras';
+      return String(year);
+    }
+
+    function randomColor() {
+      const hue = Math.floor(Math.random() * 360);
+      return `hsl(${hue}, 70%, 85%)`;
+    }
+
+    const periodColorMap = new Map();
+    function getPeriodColor(period) {
+      if (!periodColorMap.has(period)) {
+        periodColorMap.set(period, randomColor());
+      }
+      return periodColorMap.get(period);
+    }
+
+    function sortColumnKeys(a, b) {
+      const [yearA, periodA] = a.split('|');
+      const [yearB, periodB] = b.split('|');
+      const isSinA = periodA === 'sin periodo';
+      const isSinB = periodB === 'sin periodo';
+      if (isSinA !== isSinB) return isSinA ? 1 : -1;
+      const isOtrasA = yearA === 'otras';
+      const isOtrasB = yearB === 'otras';
+      if (isOtrasA !== isOtrasB) return isOtrasA ? 1 : -1;
+      const numA = isNaN(Number(yearA)) ? 99 : Number(yearA);
+      const numB = isNaN(Number(yearB)) ? 99 : Number(yearB);
+      if (numA !== numB) return numA - numB;
+      const orderPeriod = { '1° cuatrimestre': 0, '2° cuatrimestre': 1, 'ambos cuatrimestres': 2, 'sin periodo': 3, 'otras': 4 };
+      return orderPeriod[periodA] - orderPeriod[periodB];
+    }
+
+    function buildNetworkFromData() {
+      clearError();
+      if (!rawGrafo || !rawDetalle) {
+        showError('Faltan datos: cargá ambos archivos JSON.');
+        return;
+      }
+
+      const detalleNodes = rawDetalle.nodes || {};
+      const grafoNodes = rawGrafo.nodes || {};
+      const edgesRaw = rawGrafo.edges || [];
+
+      const nodesArray = [];
+      const edgesArray = [];
+      const columnMap = new Map();
+      const edgeSet = new Set();
+      const connectedCodes = new Set();
+
+      edgesRaw.forEach(e => {
+        if (!e.from || !e.to) return;
+        connectedCodes.add(e.from);
+        const targets = Array.isArray(e.to) ? e.to : [e.to];
+        targets.forEach(t => {
+          if (t) connectedCodes.add(t);
+        });
+      });
+
+      connectedCodes.forEach(code => {
+        const g = grafoNodes[code] || {};
+        const d = detalleNodes[code] || {};
+        const period = getPeriodKey(d.periodo || g.periodo);
+        const year = getYearKey(d.anio !== undefined ? d.anio : g.anio);
+        const columnKey = `${year}|${period}`;
+        if (!columnMap.has(columnKey)) columnMap.set(columnKey, []);
+
+        const label = (d.nombre || g.nombre || code) + '\n' + (d.codigo || g.codigo || '');
+        const node = {
+          id: code,
+          label: label,
+          title: `${d.nombre || g.nombre || code}\n${year} / ${period}`,
+          shape: 'box',
+          color: { background: getPeriodColor(period), border: '#666' },
+          borderWidth: 1,
+          font: { multi: true },
+          data: { meta: d, grafo: g, originalLabel: label }
+        };
+
+        columnMap.get(columnKey).push(node);
+        nodesArray.push(node);
+      });
+
+      const sortedKeys = Array.from(columnMap.keys()).sort(sortColumnKeys);
+      const columnSpacing = 360;
+      const rowSpacing = 140;
+      let headerIndex = 0;
+
+      sortedKeys.forEach((key, columnIndex) => {
+        const columnNodes = columnMap.get(key);
+        columnNodes.sort((a, b) => (a.label || '').localeCompare(b.label || ''));
+        columnNodes.forEach((node, rowIndex) => {
+          node.x = columnIndex * columnSpacing;
+          node.y = rowIndex * rowSpacing;
+          node.fixed = { x: true, y: true };
+        });
+
+        const [year, period] = key.split('|');
+        nodesArray.push({
+          id: `header-${headerIndex++}`,
+          label: `${period}${year === 'otras' ? '' : `\n${year}`}`,
+          shape: 'box',
+          color: { background: '#eef2ff', border: '#aac2ff' },
+          font: { multi: true, size: 14, color: '#1a3f7a' },
+          borderWidth: 1,
+          fixed: { x: true, y: true },
+          x: columnIndex * columnSpacing,
+          y: -100,
+          physics: false,
+          selectable: false,
+          hover: false
+        });
+      });
+
+      edgesRaw.forEach(e => {
+        if (!e.from || !e.to) return;
+        const targets = Array.isArray(e.to) ? e.to : [e.to];
+        targets.forEach(t => {
+          if (!t) return;
+          const key = `${e.from}->${t}`;
+          if (edgeSet.has(key)) return;
+          edgeSet.add(key);
+          edgesArray.push({
+            from: e.from,
+            to: t,
+            arrows: 'to',
+            color: { color: randomColor() }
+          });
+        });
+      });
+
+      visNodes = new vis.DataSet(nodesArray);
+      visEdges = new vis.DataSet(edgesArray);
+
+      const container = document.getElementById('network');
+      const data = { nodes: visNodes, edges: visEdges };
+      const options = {
+        layout: { improvedLayout: false },
+        physics: { enabled: false },
+        interaction: { hover: true, multiselect: false },
+        nodes: { shape: 'box', margin: 10, widthConstraint: { maximum: 220 } }
+      };
+
+      if (network) network.destroy();
+      network = new vis.Network(container, data, options);
+
+      userStatusMap.forEach((status, code) => updateNodeAppearance(code));
+
+      network.on('click', params => {
+        if (params.nodes && params.nodes.length) {
+          showNodeDetails(params.nodes[0]);
+        } else {
+          hideDetails();
+        }
+      });
+
+      document.getElementById('fitBtn').onclick = () => network.fit({ animation: true });
+      document.getElementById('toggleReq').onclick = () => {
+        showReq = !showReq;
+        document.getElementById('req-cursar').style.display = showReq ? 'block' : 'none';
+        document.getElementById('req-aprobar').style.display = showReq ? 'block' : 'none';
+      };
+
+      setTimeout(() => network.fit({ animation: false }), 300);
+    }
+
+    function hideDetails() {
+      document.getElementById('details').style.display = 'none';
+    }
+
+    function showNodeDetails(code) {
+      const node = visNodes.get(code);
+      const meta = node.data && node.data.meta ? node.data.meta : (rawDetalle && rawDetalle.nodes && rawDetalle.nodes[code] ? rawDetalle.nodes[code] : {});
+      const grafoNode = node.data && node.data.grafo ? node.data.grafo : (rawGrafo && rawGrafo.nodes && rawGrafo.nodes[code] ? rawGrafo.nodes[code] : {});
+      document.getElementById('details').style.display = 'block';
+      document.getElementById('n-code').textContent = code;
+      document.getElementById('n-name').textContent = meta.nombre || grafoNode.nombre || '';
+      document.getElementById('n-type').textContent = meta.tipo || grafoNode.tipo || '';
+      document.getElementById('n-year').textContent = meta.anio || grafoNode.anio || '';
+      document.getElementById('n-state').textContent = meta.estado_actual || grafoNode.estado_actual || '';
+      const userStatus = userStatusMap.get(code) || '';
+      document.getElementById('n-user-status').textContent = userStatus || '(sin marcador)';
+      selectedNodeCode = code;
+      const radios = document.querySelectorAll('input[name="userStatus"]');
+      radios.forEach(radio => { radio.checked = radio.value === userStatus; });
+
+      const rc = (meta.requisitos && meta.requisitos.cursar) || (grafoNode.requisitos && grafoNode.requisitos.cursar) || [];
+      const ra = (meta.requisitos && meta.requisitos.aprobar) || (grafoNode.requisitos && grafoNode.requisitos.aprobar) || [];
+
+      document.getElementById('req-cursar').textContent = formatAlternatives(rc);
+      document.getElementById('req-aprobar').textContent = formatAlternatives(ra);
+
+      const outs = (rawGrafo.edges || []).filter(e => e.from === code).map(e => Array.isArray(e.to) ? e.to : [e.to]).flat().filter(Boolean);
+      document.getElementById('unlocks').textContent = outs.length ? outs.join(', ') : '(ninguno)';
+    }
+
+    function formatAlternatives(list) {
+      if (!list || !list.length) return '(sin requisitos)';
+      return list.map((alt, i) => {
+        const parts = (alt || []).map(r => {
+          if (r.especial) return `[especial: ${r.especial}]`;
+          if (r.codigo && r.estado) return `${r.codigo} : ${r.estado}`;
+          if (r.codigo) return `${r.codigo}`;
+          return JSON.stringify(r);
+        });
+        return `Opción ${i+1}: ${parts.join(' && ')}`;
+      }).join('\\n\\n');
+    }
+    function strikeThroughText(text) {
+      return text.split('').map(ch => ch + '\u0336').join('');
+    }
+    function updateNodeAppearance(code) {
+      if (!visNodes || !code) return;
+      const node = visNodes.get(code);
+      if (!node) return;
+      const status = userStatusMap.get(code);
+      const currentColor = node.color && typeof node.color === 'object' ? node.color.background || '#fff' : node.color || '#fff';
+      const originalLabel = node.data && node.data.originalLabel ? node.data.originalLabel : node.label;
+      let label = originalLabel;
+      let borderColor = '#666';
+      if (status === 'aprobada') {
+        borderColor = '#1f8f24';
+        label = strikeThroughText(originalLabel);
+      } else if (status === 'final') {
+        borderColor = '#d97b00';
+        label = `O\n${originalLabel}`;
+      } else if (status === 'promocion') {
+        borderColor = '#cfa500';
+        label = `👑\n${strikeThroughText(originalLabel)}`;
+      }
+      visNodes.update({ id: code, label: label, color: { background: currentColor, border: borderColor } });
+    }
+
+    function setUserStatus(code, status) {
+      if (!code) return;
+      if (!status) userStatusMap.delete(code);
+      else userStatusMap.set(code, status);
+      updateNodeAppearance(code);
+      if (selectedNodeCode === code) {
+        document.getElementById('n-user-status').textContent = status || '(sin marcador)';
+      }
+    }
+
+    function initializeUserStatusControls() {
+      const radios = document.querySelectorAll('input[name="userStatus"]');
+      radios.forEach(radio => {
+        radio.addEventListener('change', () => {
+          if (selectedNodeCode) setUserStatus(selectedNodeCode, radio.value);
+        });
+      });
+    }
+
+    function downloadImage(dataUrl, filename) {
+      const link = document.createElement('a');
+      link.href = dataUrl;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    async function exportNetworkImage(format = 'png') {
+      if (!window.html2canvas) {
+        showError('No se pudo exportar la imagen: falta html2canvas.');
+        return;
+      }
+      const container = document.getElementById('network');
+      try {
+        const canvas = await html2canvas(container, { backgroundColor: '#ffffff', useCORS: true });
+        const mime = format === 'jpg' ? 'image/jpeg' : 'image/png';
+        const ext = format === 'jpg' ? 'jpg' : 'png';
+        const dataUrl = canvas.toDataURL(mime, 0.92);
+        downloadImage(dataUrl, `grafo-materias-${Date.now()}.${ext}`);
+      } catch (err) {
+        showError('Error al exportar imagen: ' + err.message);
+      }
+    }
+
+    function savePageState() {
+      try {
+        const state = {
+          rawGrafo,
+          rawDetalle,
+          userStatus: Array.from(userStatusMap.entries()),
+          showReq,
+          view: network ? network.getViewPosition() : null
+        };
+        localStorage.setItem('planParserLastState', JSON.stringify(state));
+        showError('Estado guardado correctamente.');
+      } catch (err) {
+        showError('No se pudo guardar el estado: ' + err.message);
+      }
+    }
+
+    function restoreLastState() {
+      const raw = localStorage.getItem('planParserLastState');
+      if (!raw) {
+        showError('No hay estado guardado.');
+        return;
+      }
+      try {
+        const state = JSON.parse(raw);
+        if (state.rawGrafo && state.rawDetalle) {
+          rawGrafo = state.rawGrafo;
+          rawDetalle = state.rawDetalle;
+          updateLoadStatus();
+          hideDetails();
+          buildNetworkFromData();
+          userStatusMap.clear();
+          (state.userStatus || []).forEach(([code, status]) => userStatusMap.set(code, status));
+          if (typeof state.showReq === 'boolean') {
+            showReq = state.showReq;
+            document.getElementById('req-cursar').style.display = showReq ? 'block' : 'none';
+            document.getElementById('req-aprobar').style.display = showReq ? 'block' : 'none';
+          }
+          if (state.view && network) {
+            setTimeout(() => network.moveTo(state.view), 300);
+          }
+          showError('Estado restaurado correctamente.');
+        } else {
+          showError('El estado guardado no contiene datos válidos.');
+        }
+      } catch (err) {
+        showError('No se pudo restaurar el estado: ' + err.message);
+      }
+    }
+
+    const grafoInput = document.getElementById('grafoInput');
+    const detalleInput = document.getElementById('detalleInput');
+    const loadStatus = document.getElementById('loadStatus');
+
+    function updateLoadStatus() {
+      const grafoLoaded = !!rawGrafo;
+      const detalleLoaded = !!rawDetalle;
+      if (grafoLoaded && detalleLoaded) {
+        loadStatus.textContent = 'Ambos archivos cargados. El grafo está listo para visualizarse.';
+      } else if (grafoLoaded) {
+        loadStatus.textContent = 'Grafo cargado. Cargá el detalle para habilitar los datos completos.';
+      } else if (detalleLoaded) {
+        loadStatus.textContent = 'Detalle cargado. Cargá el grafo para habilitar la visualización.';
+      } else {
+        loadStatus.textContent = 'Cargá primero los JSON de grafo y detalle si no estás usando HTTP.';
+      }
+    }
+
+    async function loadFile(file, target) {
+      try {
+        const text = await file.text();
+        const json = JSON.parse(text);
+        if (target === 'grafo') rawGrafo = json;
+        if (target === 'detalle') rawDetalle = json;
+        updateLoadStatus();
+        if (rawGrafo && rawDetalle) {
+          hideDetails();
+          buildNetworkFromData();
+        }
+      } catch (err) {
+        showError('Error al leer archivo ' + file.name + ': ' + err.message);
+      } finally {
+        file.value = '';
+      }
+    }
+
+    grafoInput.addEventListener('change', async (ev) => {
+      const file = ev.target.files && ev.target.files[0];
+      if (!file) return;
+      await loadFile(file, 'grafo');
+    });
+
+    detalleInput.addEventListener('change', async (ev) => {
+      const file = ev.target.files && ev.target.files[0];
+      if (!file) return;
+      await loadFile(file, 'detalle');
+    });
+
+    document.getElementById('fitBtn').onclick = () => network.fit({ animation: true });
+    document.getElementById('toggleReq').onclick = () => {
+      showReq = !showReq;
+      document.getElementById('req-cursar').style.display = showReq ? 'block' : 'none';
+      document.getElementById('req-aprobar').style.display = showReq ? 'block' : 'none';
+    };
+    document.getElementById('exportPngBtn').onclick = () => exportNetworkImage('png');
+    document.getElementById('exportJpgBtn').onclick = () => exportNetworkImage('jpg');
+    document.getElementById('saveStateBtn').onclick = savePageState;
+    document.getElementById('restoreStateBtn').onclick = restoreLastState;
+    document.getElementById('loadGrafoBtn').onclick = () => grafoInput.click();
+    document.getElementById('loadDetalleBtn').onclick = () => detalleInput.click();
+
+    window.addEventListener('dragover', e => e.preventDefault());
+    window.addEventListener('drop', async e => {
+      e.preventDefault();
+      const items = Array.from(e.dataTransfer.files || []);
+      if (!items.length) return;
+      const grafoFile = items.find(f => f.name.toLowerCase().includes('grafo')) || items[0];
+      const detalleFile = items.find(f => f.name.toLowerCase().includes('detalle') || f.name.toLowerCase().includes('materias')) || items[1] || null;
+      if (grafoFile) await loadFile(grafoFile, 'grafo');
+      if (detalleFile) await loadFile(detalleFile, 'detalle');
+    });
+
+    initializeUserStatusControls();
+    updateLoadStatus();
+    // Intentar cargar por HTTP; si falla, no abrir selector de archivos automáticamente
+    tryFetchDefaults();
+  </script>
+</body>
+</html>

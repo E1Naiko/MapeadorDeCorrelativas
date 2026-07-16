@@ -1,0 +1,1670 @@
+{
+    "D1001": {
+        "cursar": [],
+        "aprobar": []
+    },
+    "I1001": {
+        "cursar": [],
+        "aprobar": []
+    },
+    "F1301": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "D1001"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "D1001"
+                }
+            ]
+        ]
+    },
+    "I1101": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1001"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1001"
+                }
+            ]
+        ]
+    },
+    "I1166": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1001"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1001"
+                }
+            ]
+        ]
+    },
+    "F1302": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "D1001"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1301"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1301"
+                }
+            ]
+        ]
+    },
+    "I1102": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1001"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1101"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1101"
+                }
+            ]
+        ]
+    },
+    "F1303": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "D1001"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1301"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1301"
+                }
+            ]
+        ]
+    },
+    "F1304": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1301"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1302"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1302"
+                }
+            ]
+        ]
+    },
+    "I1103": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1101"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1102"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                }
+            ]
+        ]
+    },
+    "I1105": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1001"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1166"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1166"
+                }
+            ]
+        ]
+    },
+    "I1104": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1101"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1102"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                }
+            ]
+        ]
+    },
+    "F1306": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1302"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1304"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1304"
+                }
+            ]
+        ]
+    },
+    "F1305": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1301"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1302"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1303"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1302"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1303"
+                }
+            ]
+        ]
+    },
+    "I1106": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1101"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1166"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1105"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1105"
+                }
+            ]
+        ]
+    },
+    "I1107": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1104"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1104"
+                }
+            ]
+        ]
+    },
+    "F1315": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1301"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1302"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1302"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1282": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1302"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1303"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1305"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1305"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1108": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1101"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1301": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1166"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1105"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1105"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1302": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1306"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1306"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1109": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1105"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1301"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1301"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1110": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1101"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1303": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1105"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1106"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1106"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1111": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1104"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1107"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1105"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1106"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1107"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1106"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1304": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1305"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1282"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1306"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1302"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1282"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1302"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1305": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1301"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1109"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1109"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1113": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1302"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1114": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1106"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1303"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1303"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1115": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1107"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1106"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1111"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1111"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1306": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1109"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1305"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1305"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1112": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1108"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1108"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1116": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1107"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1106"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1111"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1111"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1117": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1113"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1113"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1307": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1305"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1306"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1306"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1118": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1167": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1166"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1105"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1105"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "EI100": {
+        "cursar": [
+            [
+                {
+                    "estado": "aprobadas",
+                    "especial": "Tener 20 actividades"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "aprobadas",
+                    "especial": "Tener 20 actividades"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                },
+                {
+                    "estado": "Materia 5|ambos cuatrimestres|7 (Aprobado)|Examen",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "I1158": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1103"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1302"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1315"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1315"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1103"
+                }
+            ]
+        ]
+    },
+    "I1143": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1110"
+                }
+            ],
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1114"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1114"
+                }
+            ],
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1110"
+                }
+            ]
+        ]
+    },
+    "I1149": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1110"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1110"
+                }
+            ]
+        ]
+    },
+    "I1161": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1107"
+                }
+            ],
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1114"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1114"
+                }
+            ],
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1107"
+                }
+            ]
+        ]
+    },
+    "I1128": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1107"
+                }
+            ],
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1110"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1110"
+                }
+            ],
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1107"
+                }
+            ]
+        ]
+    },
+    "I1133": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1103"
+                }
+            ],
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "F1315"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1315"
+                }
+            ],
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1103"
+                }
+            ]
+        ]
+    },
+    "I1163": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1302"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1302"
+                }
+            ]
+        ]
+    },
+    "I1145": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1107"
+                }
+            ],
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1103"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1103"
+                }
+            ],
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1107"
+                }
+            ]
+        ]
+    },
+    "I1144": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1107"
+                }
+            ],
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1103"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1103"
+                }
+            ],
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1107"
+                }
+            ]
+        ]
+    },
+    "I1121": {
+        "cursar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1113"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1110"
+                },
+                {
+                    "estado": "Aprobada|Materia Genérica: Optativas Tipo B - Computación (032 OPT B)",
+                    "codigo": "I1113"
+                }
+            ]
+        ]
+    },
+    "E1318": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1282"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1305"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1282"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1310": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1282"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1305"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1282"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1603": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1302"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1303"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1306"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1106"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1302"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1303"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1309": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1301"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1105"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1305"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1109"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1301"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1305"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1311": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1302"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "F1306"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1302"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "E1505": {
+        "cursar": [
+            [
+                {
+                    "estado": "Regularizada",
+                    "codigo": "E1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1282"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1302"
+                },
+                {
+                    "estado": "Regularizada",
+                    "codigo": "I1103"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1102"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "Aprobada",
+                    "codigo": "E1304"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "I1103"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "S1001": {
+        "cursar": [
+            [
+                {
+                    "estado": "aprobadas",
+                    "especial": "Tener 15 actividades"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "aprobadas",
+                    "especial": "Tener 15 actividades"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "S1002": {
+        "cursar": [
+            [
+                {
+                    "estado": "aprobadas",
+                    "especial": "Tener 15 actividades"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ],
+        "aprobar": [
+            [
+                {
+                    "estado": "aprobadas",
+                    "especial": "Tener 15 actividades"
+                },
+                {
+                    "estado": "Aprobada",
+                    "codigo": "INFIN"
+                }
+            ]
+        ]
+    },
+    "1B010": {
+        "cursar": [],
+        "aprobar": []
+    },
+    "2B010": {
+        "cursar": [],
+        "aprobar": []
+    },
+    "3B010": {
+        "cursar": [],
+        "aprobar": []
+    },
+    "4B010": {
+        "cursar": [],
+        "aprobar": []
+    },
+    "INFIN": {
+        "cursar": [],
+        "aprobar": []
+    }
+}
